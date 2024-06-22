@@ -30,3 +30,8 @@ $(document).ready(function() {
 $('#reset-button').click(function() {
     resetCounter();
 });
+
+function toggleContent() {
+    var content = document.querySelector('.icon .content');
+    content.classList.toggle('show');
+  }

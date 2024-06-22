@@ -32,6 +32,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+    
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('JyMNIrMHlE8MPPsXS')
+    </script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -60,7 +67,9 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="login-box">
-						<a class="btn hvr-hover" href="#">LOGIN</a>
+                        <div class="hvr-hover">
+						    <p><a id="basic" class="btn" href="https://sistema-riga-app.netlify.app/login" data-placeholder="Sign In">LOGIN</a></p>
+                        </div>
 					</div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
@@ -95,8 +104,9 @@
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
+                        <i class="fa fa-bars"></i>                
+                    </button>
+                    <H1>BODEGA RIGA</H1>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -171,7 +181,7 @@
                 <div class="col-lg-12">
                     <h2>CONTACTANOS</h2>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item active">CONTACTANOS </li>
                     </ul>
                 </div>
@@ -188,7 +198,7 @@
                     <div class="contact-form-right"  >
                         <h2>ESCRIBENOS</h2>
                         <p>MANDANOS TU OPINION SOBRE NUESTRA EMPRESA. TU OPINION NOS AYUDA A MEJORAR Y BRINDARLES MEJORES PRODUCTOS</p>
-                        <form id="" action="https://formspree.io/f/xayrggaz" method="POST">
+                        <form id="form" action="" method="POST">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -235,7 +245,7 @@
                                 <p><i class="fas fa-phone-square"></i>Celular: <a href="tel:903019613">903019613</a></p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope"></i>Correo: <a href="mailto:contactinfo@gmail.com">rigabodega@gmail.com</a></p>
+                                <p><i class="fas fa-envelope"></i>Correo: <a href="mailto:contactinfo@gmail.com">riga.bodega@gmail.com</a></p>
                             </li>
                         </ul>
                         <a class="tel" href="tel:903019613">
@@ -264,25 +274,25 @@
         <div class="main-instagram owl-carousel owl-theme">
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <img src="images/aceite.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <img src="images/fideo.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <img src="images/papas.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -290,15 +300,15 @@
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-04.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <img src="images/leche.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -306,15 +316,15 @@
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-06.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <img src="images/cuaderno.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
@@ -322,30 +332,36 @@
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-08.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <img src="images/detergente.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <img src="images/arroz.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Instagram Feed  -->
+    <!-- Contador de visitas -->
+    <div id="visit-counter" style="text-align: center; ">
+        <p>Esta página ha sido visitada <span id="counter">0</span> veces.</p>
+        <button onclick="resetCounter()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Restablecer contador</button>
+    </div>
 
+<!-- End contador de visitas -->
 
     <!-- Start Footer  -->
     <footer class="footer">
@@ -354,32 +370,32 @@
                 <i class="fa-solid fa-user"></i>
                 <p class="nombre">Alexis Wilmer Gutierrez Ccerhuayo</p>
                 <span>|</span>
-                <a class="email" href="mailto:andres.salcedo@upsjb.edu.pe">alexis.gutierrez@upsjb.edu.pe</a>
+                <a class="email" href="mailto:alexis.gutierrez@upsjb.edu.pe">alexis.gutierrez@upsjb.edu.pe</a>
     
                 <i class="fa-solid fa-user"></i>
                 <p class="nombre">Edu GianPiero Herrera Huillca</p>
                 <span>|</span>
-                <a class="email" href="mailto:diegoa.hernandez@upsjb.edu.pe">edu.herrera@upsjb.edu.pe</a>
+                <a class="email" href="mailto:edu.herrera@upsjb.edu.pe">edu.herrera@upsjb.edu.pe</a>
     
                 <i class="fa-solid fa-user"></i>
                 <p class="nombre">Patrick Valentino Jaques Palomino</p>
                 <span>|</span>
-                <a class="email" href="mailto:dyer.tamani@upsjb.edu.pe">patrick.palomino@upsjb.edu.pe</a>
+                <a class="email" href="mailto:patrick.palomino@upsjb.edu.pe">patrick.palomino@upsjb.edu.pe</a>
     
                 <i class="fa-solid fa-user"></i>
                 <p class="nombre">Alexander Juan Enrique Muriano Belahonia</p>
                 <span>|</span>
-                <a class="email" href="mailto:israel.medina@upsjb.edu.pe">alexander.muriano@upsjb.edu.pe</a>
+                <a class="email" href="mailto:alexander.muriano@upsjb.edu.pe">alexander.muriano@upsjb.edu.pe</a>
     
                 <i class="fa-solid fa-user"></i>
                 <p class="nombre">Ricardo Andres Obregon Lara</p>
                 <span>|</span>
-                <a class="email" href="mailto:josem.huarcaya@upsjb.edu.pe">ricardo.obregon@upsjb.edu.pe</a>
+                <a class="email" href="mailto:ricardo.obregon@upsjb.edu.pe">ricardo.obregon@upsjb.edu.pe</a>
     
                 <i class="fa-solid fa-user"></i>
                 <p class="nombre">Jose Lizandro Sanchez Quispe</p>
                 <span>|</span>
-                <a class="email" href="mailto:marco.chumbes@upsjb.edu.pe">josel.sanchez@upsjb.edu.pe</a>
+                <a class="email" href="mailto:josel.sanchez@upsjb.edu.pe">josel.sanchez@upsjb.edu.pe</a>
 
                 <i class="fa-solid fa-circle-user"></i>
                 <p class="nombre">Ing. Luis Alfredo Castillon Siguas</p>
@@ -399,19 +415,13 @@
             </div>
         </div>
         <div class="redes">
-            <a href="" target="_blank">
+            <a href="https://www.facebook.com/people/Bodega-Riga/pfbid02MSxkSzZDjrLJkWpGX3owPdg1Ns1yXMdknJWQkVDxLuzgKbypYXz4hkU7LsdgTNb5l/" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com/bodegariga/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
+            <a href="https://www.youtube.com/channel/UCOs2CPS5fHQSwonYinLpm3Q" target="_blank">
                 <i class="fa-brands fa-youtube"></i>
             </a>
         </div>
@@ -429,6 +439,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/contador.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
@@ -441,6 +452,7 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
