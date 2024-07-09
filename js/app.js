@@ -1,20 +1,20 @@
 const btn = document.getElementById('submit');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-   btn.value = 'Enviando...';
+  btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_mt98opk';
+  const serviceID = 'default_service';
+  const templateID = 'template_mt98opk';
 
-   emailjs.sendForm(serviceID, templateID, this)
+  emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Enviado!');
-    }, (err) => {
+      alert('¡Correo enviado exitosamente!');
+    })
+    .catch((err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      alert(`Error al enviar el correo: ${JSON.stringify(err)}`);
     });
 });
